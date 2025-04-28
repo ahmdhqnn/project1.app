@@ -1,3 +1,15 @@
 <resources>
-    <string name="app_name">project1app</string>
+    <string name="app_name" translatable="false">BreathEasy</string>
+    <string name="menu_3dvisual">View 3D Visualization</string>
+    <string name="menu_ar">Scan Image for Augmented Reality</string>
+    <string name="menu_module">View Reading Module</string>
+    <string name="menu_glosarium">View Glosarium</string>
+    <string name="ar_dummy">This is Augmented Reality page</string>
+    <string name="visual_dummy">This is 3D Visualization page</string>
+    <string name="module_dummy">This is Reading Module page</string>
+    <string name="glosarium_dummy">This is Glosarium page</string>
+    <string name="ar_title">Augmented Reality</string>
+    <string name="animation_title">3D Visualization</string>
+    <string name="module_title">Reading Module</string>
+    <string name="glosarium_title" translatable="false">Glosarium</string>
 </resources>
