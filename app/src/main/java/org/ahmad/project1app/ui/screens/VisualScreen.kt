@@ -20,9 +20,11 @@ import androidx.compose.foundation.layout.padding
 import androidx.compose.foundation.layout.width
 import androidx.compose.foundation.shape.RoundedCornerShape
 import androidx.compose.material.icons.Icons
-import androidx.compose.material.icons.automirrored.outlined.ArrowBack
-import androidx.compose.material.icons.filled.Menu
+import androidx.compose.material.icons.automirrored.rounded.KeyboardArrowLeft
+import androidx.compose.material.icons.rounded.Menu
 import androidx.compose.material3.CenterAlignedTopAppBar
+import androidx.compose.material3.DropdownMenu
+import androidx.compose.material3.DropdownMenuItem
 import androidx.compose.material3.ExperimentalMaterial3Api
 import androidx.compose.material3.Icon
 import androidx.compose.material3.IconButton
@@ -31,6 +33,10 @@ import androidx.compose.material3.Surface
 import androidx.compose.material3.Text
 import androidx.compose.material3.TopAppBarDefaults
 import androidx.compose.runtime.Composable
+import androidx.compose.runtime.getValue
+import androidx.compose.runtime.mutableStateOf
+import androidx.compose.runtime.remember
+import androidx.compose.runtime.setValue
 import androidx.compose.ui.Alignment
 import androidx.compose.ui.Modifier
 import androidx.compose.ui.graphics.Color
@@ -44,6 +50,7 @@ import androidx.compose.ui.viewinterop.AndroidView
 import androidx.navigation.NavHostController
 import androidx.navigation.compose.rememberNavController
 import org.ahmad.project1app.R
+import org.ahmad.project1app.navigation.Screen
 import org.ahmad.project1app.ui.theme.Project1appTheme
 
 @OptIn(ExperimentalMaterial3Api::class)
@@ -64,17 +71,35 @@ fun VisualScreen(navController: NavHostController) {
                 navigationIcon = {
                     IconButton(onClick = { navController.popBackStack() }) { // Navigasi kembali
                         Icon(
-                            imageVector = Icons.AutoMirrored.Outlined.ArrowBack,
+                            imageVector = Icons.AutoMirrored.Rounded.KeyboardArrowLeft,
                             contentDescription = stringResource(R.string.back)
                         )
                     }
                 },
                 actions = {
-                    IconButton(onClick = { /* do something */ }) {
+                    var expanded by remember { mutableStateOf(false) }
+                    IconButton(onClick = {expanded = true}) {
                         Icon(
-                            imageVector = Icons.Filled.Menu,
+                            imageVector = Icons.Rounded.Menu,
                             contentDescription = stringResource(R.string.menu)
                         )
+                        DropdownMenu(
+                            expanded = expanded,
+                            onDismissRequest = { expanded = false}
+                        ) {
+                            DropdownMenuItem(
+                                text = { Text(stringResource(R.string.ar_title))},
+                                onClick = {navController.navigate(Screen.Augmented.route)}
+                            )
+                            DropdownMenuItem(
+                                text = { Text(stringResource(R.string.module_title))},
+                                onClick = {navController.navigate(Screen.Module.route)}
+                            )
+                            DropdownMenuItem(
+                                text = { Text(stringResource(R.string.glosarium_title))},
+                                onClick = {navController.navigate(Screen.Glosarium.route)}
+                            )
+                        }
                     }
                 }
             )
@@ -169,7 +194,7 @@ fun VisualScreen(navController: NavHostController) {
                 Spacer(modifier = Modifier.height(8.dp))
 
                 Text(
-                    text = "Respirator system Anatomy",
+                    text = stringResource(R.string.anatomy_subtitle),
                     color = Color.Black, // Sesuaikan warna teks jika perlu
                     fontSize = 20.sp,
                     fontWeight = FontWeight.Bold,
@@ -180,7 +205,7 @@ fun VisualScreen(navController: NavHostController) {
                     modifier = Modifier.padding(bottom = 8.dp)
                 ) {
                     Text(
-                        text = "3D Model",
+                        text = stringResource(R.string.model3d_subtitle),
                         color = Color.Gray,
                         fontSize = 14.sp
                     )
@@ -193,7 +218,7 @@ fun VisualScreen(navController: NavHostController) {
                         modifier = Modifier.padding(4.dp)
                     ) {
                         Text(
-                            text = "by 3D4SCI",
+                            text = stringResource(R.string.credit3d),
                             color = Color.Black, // Sesuaikan warna teks di dalam surface jika perlu
                             fontSize = 12.sp,
                             modifier = Modifier.padding(horizontal = 6.dp, vertical = 2.dp)
@@ -207,6 +232,8 @@ fun VisualScreen(navController: NavHostController) {
         }
     }
 }
+
+
 
 @Preview(showBackground = true)
 @Preview(uiMode = Configuration.UI_MODE_NIGHT_YES, showBackground = true)

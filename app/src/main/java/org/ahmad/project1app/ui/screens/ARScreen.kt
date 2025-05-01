@@ -5,8 +5,8 @@ import androidx.compose.foundation.layout.Box
 import androidx.compose.foundation.layout.fillMaxHeight
 import androidx.compose.foundation.layout.padding
 import androidx.compose.material.icons.Icons
-import androidx.compose.material.icons.automirrored.outlined.ArrowBack
-import androidx.compose.material.icons.filled.Menu
+import androidx.compose.material.icons.automirrored.rounded.KeyboardArrowLeft
+import androidx.compose.material.icons.rounded.Menu
 import androidx.compose.material3.CenterAlignedTopAppBar
 import androidx.compose.material3.ExperimentalMaterial3Api
 import androidx.compose.material3.Icon
@@ -47,9 +47,9 @@ fun ARScreen(navController: NavHostController){
                     )
                 },
                 navigationIcon = {
-                    IconButton(onClick = { /* do something */ }) {
+                    IconButton(onClick = { navController.popBackStack() }) {
                         Icon(
-                            imageVector = Icons.AutoMirrored.Outlined.ArrowBack,
+                            imageVector = Icons.AutoMirrored.Rounded.KeyboardArrowLeft,
                             contentDescription = "Localized description"
                         )
                     }
@@ -57,7 +57,7 @@ fun ARScreen(navController: NavHostController){
                 actions = {
                     IconButton(onClick = { /* do something */ }) {
                         Icon(
-                            imageVector = Icons.Filled.Menu,
+                            imageVector = Icons.Rounded.Menu,
                             contentDescription = "Localized description"
                         )
                     }

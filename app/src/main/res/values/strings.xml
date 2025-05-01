@@ -3,13 +3,23 @@
     <string name="menu_3dvisual">View 3D Visualization</string>
     <string name="menu_ar">Scan Image for Augmented Reality</string>
     <string name="menu_module">View Reading Module</string>
-    <string name="menu_glosarium">View Glosarium</string>
+    <string name="menu_glosarium">View Glossary</string>
     <string name="ar_dummy">This is Augmented Reality page</string>
     <string name="visual_dummy">This is 3D Visualization page</string>
     <string name="module_dummy">This is Reading Module page</string>
-    <string name="glosarium_dummy">This is Glosarium page</string>
+    <string name="glosarium_dummy">This is Glossary page</string>
     <string name="ar_title">Augmented Reality</string>
     <string name="animation_title">3D Visualization</string>
     <string name="module_title">Reading Module</string>
-    <string name="glosarium_title" translatable="false">Glosarium</string>
+    <string name="back">Back</string>
+    <string name="menu" translatable="false">Menu</string>
+    <string name="glosarium_title">Glossary</string>
+    <string name="respiratory_system_image">Respiratory System Image</string>
+    <string name="module_content_title">Learning Module</string>
+    <string name="module_content_paragraph1" translatable="false">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</string>
+    <string name="module_content_paragraph2" translatable="false">Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</string>
+    <string name="glossary">Glossary</string>
+    <string name="anatomy_subtitle">Respiratory System Anatomy</string>
+    <string name="model3d_subtitle">3D Model</string>
+    <string name="credit3d">made by 3D4SCI</string>
 </resources>

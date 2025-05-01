@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="menu_3dvisual">Lihat Visualisasi 3D</string>
+    <string name="menu_ar">Pindai Gambar Untuk Kenyataan Berimbuh</string>
+    <string name="menu_module">Lihat Modul Bacaan</string>
+    <string name="menu_glosarium">Lihat Glosarium</string>
+    <string name="ar_dummy">Ini adalah halaman kenyataan berimbuh</string>
+    <string name="visual_dummy">Ini adalah halaman visualisasi 3D</string>
+    <string name="module_dummy">Ini adalah halaman modul bacaan</string>
+    <string name="glosarium_dummy">Ini adalah halaman glosarium</string>
+    <string name="ar_title">Kenyataan Berimbuh</string>
+    <string name="animation_title">Visualisasi 3D</string>
+    <string name="module_title">Modul Bacaan</string>
+    <string name="back">Kembali</string>
+    <string name="glosarium_title">Glosarium</string>
+    <string name="respiratory_system_image">Gambar Sistem Pernapasan</string>
+    <string name="module_content_title">Modul Pembelajaran</string>
+    <string name="glossary">Glosarium</string>
+    <string name="anatomy_subtitle">Anatomi Sistem Pernapasan</string>
+    <string name="model3d_subtitle">Model 3D</string>
+    <string name="credit3d">dibuat oleh 3D4SCI</string>
+</resources>
